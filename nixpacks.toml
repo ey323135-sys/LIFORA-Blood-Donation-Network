@@ -1,8 +1,8 @@
-# nixpacks.toml — Railway build configuration for LIFORA
-# This ensures the correct build phases and environment variable handling
+
+# LIFORA Railway build configuration
 
 [phases.setup]
-nixPkgs = ["nodejs_20"]
+nixPkgs = ["nodejs_22"]
 
 [phases.install]
 cmds = [

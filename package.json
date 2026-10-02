@@ -1,6 +1,9 @@
 {
   "name": "lifora-blood-donation-network",
   "version": "1.0.0",
+  "engines": {
+  "node": ">=22.0.0"
+  },
   "description": "LIFORA – Digital Blood Donation Emergency Network",
   "main": "server/server.js",
   "scripts": {

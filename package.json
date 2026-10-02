@@ -1,0 +1,33 @@
+{
+  "name": "lifora-blood-donation-network",
+  "version": "1.0.0",
+  "description": "LIFORA – Digital Blood Donation Emergency Network",
+  "main": "server/server.js",
+  "scripts": {
+    "install:server": "npm install --prefix server",
+    "install:client": "npm install --prefix client",
+    "postinstall": "npm run install:server && npm run install:client",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seed/seedData.js",
+    "create-admin": "node server/scripts/createAdmin.js"
+  },
+  "keywords": [
+    "blood-donation",
+    "emergency-network",
+    "healthcare",
+    "react",
+    "express",
+    "supabase",
+    "postgresql",
+    "lifora"
+  ],
+  "author": "LIFORA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
